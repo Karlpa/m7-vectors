@@ -10,7 +10,7 @@ sample(marbles, 1:6)
 # - Takes in a `guess` of a marble color
 # - Randomly samples a marble
 # - Returns whether or not the person guessed accurately (preferrably a full phrase)
-tries <- 0
+tries <- 1
 MarbleGame <- function(guess) {
   tries <- tries + 1
   if(guess == sample(marbles, 1:6)) {
@@ -22,7 +22,8 @@ MarbleGame <- function(guess) {
 
 # Play the marble game!
 MarbleGame("blue")
-
+my.list <- list('1' "blue", TRUE)
+my.list`
 # Bonus: Play the marble game until you win, keeping track of how many tries you take
 
 
